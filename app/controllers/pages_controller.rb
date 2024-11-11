@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   end
 
   def answer
+    @ask = params[:input]
     @answer = if params[:input] == "I'm going to work"
                 'Great!'
               elsif params[:input] == '?'
